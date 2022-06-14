@@ -1,6 +1,8 @@
 # appunti-swift-ios
 
 
+> Come creare un README.md https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 > Per cambiare il tema di lavoro
 > Light vs Dark si può utilizzare
 
