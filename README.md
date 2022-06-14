@@ -150,8 +150,7 @@ dell funzione e premere options
 
 # Funzioni che ritornano piu' parametri.
 
-'''
-
+```
 func calcoloMinMax(array: [Int]) -> (min: Int, max: Int)
 {
 
@@ -170,7 +169,7 @@ func calcoloMinMax(array: [Int]) -> (min: Int, max: Int)
     return (minimo, massimo)
 }
 
-'''
+```
 var array = [123, 0, 22, -1, 155, 43]
 let minMax = calcoloMinMax(array: array) // restituisce la tupla (min,max) che conservo in una costante qualsiasi
 // ti ricordo che il tipo di dato viene acquistato all'inizializzazione. minMax ora rappresenta una tupla di tipo (min,max)
