@@ -150,8 +150,11 @@ dell funzione e premere options
 
 # Funzioni che ritornano piu' parametri.
 
-func calcoloMinMax(array: [Int]) -> (min: Int, max: Int) {
-    var minimo = array[0] //setto minimo e massimo uguali al primo valore dell'array
+func calcoloMinMax(array: [Int]) -> (min: Int, max: Int)
+{
+
+    //setto minimo e massimo uguali al primo valore dell'array
+    var minimo = array[0] 
     var massimo = array[0]
     
     for valore in array {
