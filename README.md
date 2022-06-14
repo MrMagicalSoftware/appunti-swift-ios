@@ -145,3 +145,35 @@ Nota : per aprire la documentazione
 rapida del codice spostarsi sul nome
 dell funzione e premere options
 (tasto vicino al cmd)
+
+
+
+# Funzioni che ritornano piu' parametri.
+
+func calcoloMinMax(array: [Int]) -> (min: Int, max: Int) {
+    var minimo = array[0] //setto minimo e massimo uguali al primo valore dell'array
+    var massimo = array[0]
+    
+    for valore in array {
+        if valore < minimo {
+            minimo = valore
+        } else if valore > massimo {
+            massimo = valore
+        }
+    }
+    
+    return (minimo, massimo)
+}
+var array = [123, 0, 22, -1, 155, 43]
+let minMax = calcoloMinMax(array: array) // restituisce la tupla (min,max) che conservo in una costante qualsiasi
+// ti ricordo che il tipo di dato viene acquistato all'inizializzazione. minMax ora rappresenta una tupla di tipo (min,max)
+print("il minimo è \(minMax.min) e il massimo è \(minMax.max)") //accedo ai valori della tupla
+//con .min e .max
+
+
+
+
+
+
+
+
