@@ -16,37 +16,14 @@ PaintCodeApp www.paintcodeapp.com
 App Icon Generator www.appicon.co
 spostarsi nella sezione di ImageSet
 
-> Iphone Running
-> 1 ) Controllare che sia la versione del telefono
 
-    che di xcode creano un math sull'ultimo numero
-    Es : 10.0  13.0 ok
-
-2. Su xcode Preferencies > Account > Aggiungere Apple ID
-
-3 ) Signing & Capabilites
-selezionare il progetto > Signing e ...
-Selezionare Automatically manage Signing
-
-4. USB Connections
-   Selezionare il telefono fisico vicino
-   al bottone di start e stop
-
-Per collegare il telefono via wifi-
-su xcode usare il menu Windows
-Devices e selezionare Connect via network
-Telefono e pc devono essere sotto la stessa rete
-
-//#############################################//
-
-Clone an Existing project
+# Clone an Existing project
 
 > Dal menu Source Control
 > Oppure dal menu iniziale di Xcode
 > Clone an Existing project
 
-// RISORSE //
-Clonare i seguenti progetti
+Clonare i seguenti progetti :
 
 https://github.com/dkhamsing/open-source-ios-apps#calculator
 https://github.com/fullstackio/FlappySwift
@@ -62,9 +39,8 @@ Esercizio Clonare i progetti e provarli sul Simulatore
 Per copiare un elemento UI , posso utilizzare
 Il tasto alt
 
-//##################################//
 
-Collegare immagine a codice :
+# Collegare immagine a codice :
 
 > Splittare la view : tra codice sorgente e UI
 > Tasto control drag and drop sul codice
@@ -76,20 +52,20 @@ Importante se devo rinominare il nome
 tasto destro Refactor altrimenti produco un crash
 perchè non trova più la reference
 
-//###################################//
 
-Convenzioni tra programmatori
+# Convenzioni tra programmatori
 
 CamelCase
 Kebab-case
 snake_case
 
-//####################################//
+
 
 Come si genera un numero pseudoCasuale
 Kjanacademy.org/computing/
 
 > random vs psudorandom-number-generators
+
 
 Int.random(in : 1 ... 3 ) //numeri compresi tra 1 e 3
 Int.random(in : low ..< upper ) non include upperBound
@@ -99,14 +75,12 @@ Bool.random()
 array.randomElement()
 array.shuffle()
 
-//###################################//
 
 Esercizio
 Creare un password generator
 
-//##################################//
 
-Auto-layout and Responsive UI
+# Auto-layout and Responsive UI
 
 Si attivano le constrains nella schermata
 view dove sono presenti View as : Iphone ... - 50 % +
@@ -129,7 +103,7 @@ di tipo stack view ...
 Posso raggrupparle ricorsivamente
 
 
-Come si programma ?
+# Come si programma ?
 
 > Cerca su google
 > stack overflow
@@ -171,12 +145,15 @@ func calcoloMinMax(array: [Int]) -> (min: Int, max: Int)
     return (minimo, massimo)
 }
 
-```
+
 var array = [123, 0, 22, -1, 155, 43]
 let minMax = calcoloMinMax(array: array) // restituisce la tupla (min,max) che conservo in una costante qualsiasi
 // ti ricordo che il tipo di dato viene acquistato all'inizializzazione. minMax ora rappresenta una tupla di tipo (min,max)
 print("il minimo è \(minMax.min) e il massimo è \(minMax.max)") //accedo ai valori della tupla
 //con .min e .max
+
+```
+
 
 
 #Parametri di ingresso e uscita opzionali
