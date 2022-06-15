@@ -156,11 +156,22 @@ print("il minimo è \(minMax.min) e il massimo è \(minMax.max)") //accedo ai va
 
 
 
-#Parametri di ingresso e uscita opzionali
+# Parametri di ingresso e uscita opzionali
 
+```
+var mioArray: [Int]?
 
+func contaElementi(array: [Int]?) {
+    if array == nil {
+        print("il vettore è nullo per favore inizializzalo")
+        return
+    }
+    print("l'array contiene \(array!.count) elementi")
+}
 
+contaElementi(array: mioArray)
 
+```
 
 
 
