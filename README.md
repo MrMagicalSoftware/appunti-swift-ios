@@ -171,6 +171,22 @@ func contaElementi(array: [Int]?) {
 
 contaElementi(array: mioArray)
 
+
+
+var vettoreInteri: [Int]?
+func contaElementi(array: [Int]?) -> Int? {
+    if array == nil {
+        return nil
+    }
+    return array!.count
+}
+if let numElementi = contaElementi(array: vettoreInteri) {
+    print("l'array contiene \(numElementi)")
+} else {
+    print("per favore inizializza l'array")
+}
+
+
 ```
 
 
