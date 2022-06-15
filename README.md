@@ -192,5 +192,51 @@ if let numElementi = contaElementi(array: vettoreInteri) {
 
 ```
 
+# Parametro Inout
+
+La modifica di un parametro di una funzione, fino ad ora, è impossibile. I parametri, di default, vengono considerati come costanti (let). Cioè, nel caso in cui ti servisse modificare, dall’interno della funzione, la variabile passata al parametro verrebbe a crearsi un problema:
+
+```
+var a = 2
+
+func modifica(variabile: Int) {
+   variabile = 4 // Errore!!! Il parametro è considerato come let
+
+}
+
+```
+
+
+Per poter risolvere questo problema, il linguaggio Swift ti mette a disposizione la parola chiave inout che permette di modificare direttamente la variabile passata come parametro.
+
+Il parametro inout va inserito prima della definizione del tipo di dato del parametro:
+
+func nomeFunc(parametro: inout Tipo) {} // Pseudo codice
+
+Per capire meglio l’utilità del parametro inout, proviamo a creare una funzione che scambi i valori di due variabili:
+```
+var primo = 2
+
+var secondo = 7
+
+func scambiaValori(a: inout Int, b: inout Int) {
+
+    let c = a
+    a = b
+    b = c
+}
+```
+
+Quando passi una variabile ad un parametro inout devi inserire il prefisso & seguito dal nome della var/let, il perché dell’inserimento di questo prefisso è un po’ complicato e molto grossolanamente serve ad avvisare la funzione che stai passando un riferimento ad una variabile presente nel progetto.
+
+```
+
+print("\(primo) e \(secondo) ")
+
+scambiaValori(a: &primo, b: &secondo)
+
+print("\(primo) e \(secondo) ")
+
+```
 
 
