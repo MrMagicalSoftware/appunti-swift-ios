@@ -240,3 +240,30 @@ print("\(primo) e \(secondo) ")
 ```
 
 
+# How to Make Timer in Swift 
+```
+
+
+var timer = Timer()
+
+timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #selector(updateTimer), userInfo : nil , repeats : true)
+
+
+
+
+@objc fun updateTimer(){
+    
+    if(condition){
+        timer.invalide()
+    }
+
+}
+
+
+
+
+
+
+
+
+
