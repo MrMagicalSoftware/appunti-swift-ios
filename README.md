@@ -248,9 +248,6 @@ var timer = Timer()
 
 timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #selector(updateTimer), userInfo : nil , repeats : true)
 
-
-
-
 @objc funct updateTimer(){
     
     if(condition){
@@ -258,7 +255,25 @@ timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #se
     }
 
 }
+```
 
+
+# How to move an object 
+
+
+
+
+```
+
+@IBAction func tapButton() {
+    UIView.animateWithDuration(0.75, delay: 0, options: .CurveLinear, animations: {
+        // this will change Y position of your imageView center
+        // by 1 every time you press button
+        self.puppy.center.y -= 1  
+    }, completion: nil)
+}
+
+```
 
 
 
