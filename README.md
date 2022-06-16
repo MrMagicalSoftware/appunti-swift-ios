@@ -322,4 +322,8 @@ Once there you should do a “pod init” in your terminal
 It will then output a file named Podfile.
 
 
+Step 2:
+
+Once we have selected our pods we should now create/open the project that we want to integrate the pod to. Once our project is ready just open a terminal and navigate to the project folder
+
 
