@@ -251,10 +251,10 @@ timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #se
 
 
 
-@objc fun updateTimer(){
+@objc funct updateTimer(){
     
     if(condition){
-        timer.invalide()
+        timer.invalidate()
     }
 
 }
