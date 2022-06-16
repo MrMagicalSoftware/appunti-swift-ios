@@ -305,3 +305,19 @@ do {
 }
 
 ```
+
+
+# How to install Cocoapods
+
+> sudo gem install cocoapods
+
+
+Once we complete setting up are cocoapods we should be ready to add a third party library to our project, 
+you can use cocoapods.org to browse the available libraries, for this example we’ll be using NavigationDrawer,
+so let’s go ahead and open it the page
+
+
+
+
+
+
