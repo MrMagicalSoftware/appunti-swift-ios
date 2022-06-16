@@ -278,7 +278,7 @@ timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #se
 
 # How to make a Sound 
 
-
+```
 var player : AVAudioPlayer!
 
 guard let url = Bundle.main.url(forResource: "mp3/" + nameOfSound, withExtension: "mp3") else {
@@ -303,3 +303,5 @@ do {
     print("Error was detected")
     print(error.localizedDescription)
 }
+
+```
