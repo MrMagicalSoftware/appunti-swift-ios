@@ -276,9 +276,30 @@ timer = Timer.scheduledTimer(timeInterval : 1.0 , target : self , selector : #se
 ```
 
 
+# How to make a Sound 
 
 
+var player : AVAudioPlayer!
 
-
-
-
+guard let url = Bundle.main.url(forResource: "mp3/" + nameOfSound, withExtension: "mp3") else {
+    print("RETURNING ")
+    return
+}
+                
+do {
+    try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+    try AVAudioSession.sharedInstance().setActive(true)
+            
+    /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+    player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+    /* iOS 10 and earlier require the following line:
+    player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+          
+    guard let player = player else { return }        
+    player.play()
+            
+} catch let error {
+    print("Error was detected")
+    print(error.localizedDescription)
+}
