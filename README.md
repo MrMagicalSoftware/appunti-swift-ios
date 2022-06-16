@@ -317,7 +317,9 @@ you can use cocoapods.org to browse the available libraries, for this example we
 so let’s go ahead and open it the page
 
 
+Once there you should do a “pod init” in your terminal
 
+It will then output a file named Podfile.
 
 
 
