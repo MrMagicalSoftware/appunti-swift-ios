@@ -13,7 +13,7 @@ Dal menu Fonts & colors posso scegliermi il theme
 
 Color Hunt www.colorhunt.co
 PaintCodeApp www.paintcodeapp.com
-App Icon Generator www.appicon.co
+App Icon Generaton https://appicon.co/
 spostarsi nella sezione di ImageSet
 
 
