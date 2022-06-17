@@ -52,6 +52,9 @@ Importante se devo rinominare il nome
 tasto destro Refactor altrimenti produco un crash
 perchè non trova più la reference
 
+Per fare riferimento alle immagini scrivere imageLiteral nel
+codice.
+
 
 # Convenzioni tra programmatori
 
