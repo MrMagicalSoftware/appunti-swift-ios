@@ -53,7 +53,7 @@ tasto destro Refactor altrimenti produco un crash
 perchè non trova più la reference
 
 Per fare riferimento alle immagini scrivere imageLiteral nel
-codice.
+codice solo per le versioni di xcode 11
 
 
 # Convenzioni tra programmatori
