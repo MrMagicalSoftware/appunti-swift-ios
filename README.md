@@ -338,5 +338,55 @@ See this https://cocoapods.org/pods/PDFGenerator
 See this https://www.json4swift.com/
 
 
+First take the json and create a model
+Second use one of this :
+
+
+# Using Codeable Mapping
+
+```
+let url = URL(string: "http://www.stackoverflow.com")
+let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in	
+	let jsonDecoder = JSONDecoder()
+	let responseModel = try jsonDecoder.decode(Json4Swift_Base.self, from: data!)
+
+}
+task.resume()
+```
+
+
+# Using ObjectMapper
+```
+// Convert JSON String to Model
+let responseModel = Mapper<Json4Swift_Base>().map(JSONString: JSONString)
+
+// Create JSON String from Model
+let JSONString = Mapper().toJSONString(responseModel, prettyPrint: true)
+```
+
+
+
+# Using Dictionary Mapping
+```
+let url = URL(string: "http://www.json4swift.com")
+let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+
+	let someDictionaryFromJSON = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String: Any]
+	let json4Swift_Base = Json4Swift_Base(someDictionaryFromJSON)
+
+}
+task.resume()
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
